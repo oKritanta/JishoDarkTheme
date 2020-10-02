@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "JishoDarkTheme",
+  "version": "1.0",
+
+  "description": "Add a 'Dark Theme' to the site Jisho.org",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.jisho.org/*"],
+      "js": ["apply.js"]
+    }
+  ]
+
+}
